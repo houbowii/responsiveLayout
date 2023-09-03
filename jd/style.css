@@ -1,0 +1,138 @@
+:root {
+    --board-theme: lightgray;
+    --theme: white;
+}
+
+html, 
+body {
+    background: var(--board-theme);
+}
+body {
+    justify-content: center;   
+}
+
+#template {
+    padding: 0 20vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+#headbar {
+  display: flex;
+  justify-content: space-between;
+padding: 1vh;
+}
+
+#headbar span {
+  flex-grow: 1;
+}
+
+#headbar span:first-child {
+  flex-basis: 30%;
+}
+
+#headbar span:not(:first-child){
+    align-items: center;
+    text-align: center;
+}
+
+#headbar span:not(:first-child):not(:last-child) {
+  border-right: 1px solid black;
+}
+
+#searchbar {
+    padding: 0;
+    height: 25vh;
+    background: var(--theme);
+    position: relative;
+}
+#logo {
+    display: flex;
+}
+#logo>img {
+    height: 20vh;
+}
+
+#searcher {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 30vh;
+    padding: 5vh;
+    display: flex;
+    /* height: 10vh; */
+}
+
+#search-box {
+    box-sizing: border-box;
+    width: 65vh;
+    border: 2px solid red;
+    height: 5vh;
+}
+#shop-car {
+    box-sizing: border-box;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0 2vh;
+    border: 1px solid var(--board-theme);
+}
+#sb {
+    background: red;
+    border: 1px solid red;
+    display: block;
+    box-sizing: border-box;
+    width: 10vh;
+}
+#list {
+    position: absolute;
+    top: 10.5vh;
+}
+#list>span {
+    padding: 0 0.5vh;
+}
+
+#seclist {
+    position: absolute;
+    left: 33vh;
+}
+#seclist>span{
+    font-size: medium;
+    font-weight: 600;
+    padding: 1vh;
+}
+#content {
+    margin: 1vh 0vh;
+    box-sizing: border-box;
+    height: 100vh;
+    background: var(--board-theme);
+    position: relative;
+}
+#content>div:nth-child(2) {
+    margin: 0 1vh;
+}
+#content-l {
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    width: 20%;
+    height: inherit;
+    background: var(--theme);
+}
+#content-c {
+    position: absolute;
+    left: 20%;
+    box-sizing: border-box;
+    width: 58.5%;
+    height: inherit;
+    background: var(--theme);
+}
+#content-r {
+    position: absolute;
+    left: 80%;
+    box-sizing: border-box;
+    width: 20%;
+    height: inherit;
+    background: var(--theme);
+}
